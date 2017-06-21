@@ -1,8 +1,5 @@
-# This is the default format.
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title
 theme: minimal-mistakes-jekyll
-exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md"]
 
 permalink:   /:categories/:title/
 highlighter: rouge
@@ -17,7 +14,7 @@ gems:
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : simple site
+title : maylisavaro.github.io
 author :
   name : Maylis Avaro
   email : maylis.avaro@iheid.ch
@@ -41,3 +38,12 @@ kramdown:
 #
 JB :
   version : 0.3.0
+
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+
+    Contact GitHub API Training Shop Blog About 
+
+    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
+
