@@ -1,9 +1,18 @@
 # This is the default format.
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title
-
+theme: minimal-mistakes-jekyll
 exclude: [".rvmrc", ".rbenv-version", "ReadMe.md", "Rakefile", "changelog.md", "License.md"]
+
+permalink:   /:categories/:title/
 highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+
+
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
@@ -21,8 +30,13 @@ author :
 
 # Tell Github to use the kramdown markdown interpreter
 # (see https://help.github.com/articles/migrating-your-pages-site-from-maruku)
-markdown: kramdown
-
+markdown:    kramdown
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
